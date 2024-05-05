@@ -199,7 +199,7 @@
 			<organization>University Health Network</organization>
 		</developer>
 		<developer>
-			<id></id>
+			<id/>
 			<name>Lisa Wong</name>
 			<organization>University Health Network</organization>
 		</developer>
@@ -982,7 +982,7 @@
 		<!-- Update lucene version when you update hibernate-search version - These go together! -->
 		<lucene_version>9.8.0</lucene_version>
 		<hamcrest_version>2.2</hamcrest_version>
-		<hibernate_validator_version>8.0.0.Final</hibernate_validator_version>
+		<hibernate_validator_version>8.0.1.Final</hibernate_validator_version>
 		<httpcore_version>4.4.13</httpcore_version>
 		<httpclient_version>4.5.13</httpclient_version>
 		<jackson_version>2.16.1</jackson_version>
@@ -1033,7 +1033,7 @@
 		<maven_checkstyle_version>3.3.1</maven_checkstyle_version>
 
 		<!-- Jacoco -->
-		<argLine></argLine>
+		<argLine/>
 	</properties>
 
 	<dependencyManagement>
@@ -2323,7 +2323,7 @@
 								<spacesPerTab>4</spacesPerTab>
 							</indent>
 							<!--Just removes unused imports-->
-							<removeUnusedImports />
+							<removeUnusedImports/>
 							<!--Follow the editorconfig-defined order of imports-->
 							<importOrder>
 								<wildcardsLast>true</wildcardsLast>
@@ -2608,7 +2608,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore/>
 									</action>
 								</pluginExecution>
 								<pluginExecution>
@@ -2627,7 +2627,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore/>
 									</action>
 								</pluginExecution>
 							</pluginExecutions>
@@ -2858,7 +2858,7 @@
 								</replace>
 								<echo>Adding Syntax Highlighter</echo>
 								<replace dir="target/site" summary="true">
-									<include name="*.html"></include>
+									<include name="*.html"/>
 									<replacetoken><![CDATA[</body>]]></replacetoken>
 									<replacevalue><![CDATA[
 <script type="text/javascript">
@@ -2900,7 +2900,7 @@
 							<target>
 								<echo>Adding Google analytics in target/site for &lt;body&gt;</echo>
 								<replace dir="target/site" summary="true">
-									<include name="**/*.html"></include>
+									<include name="**/*.html"/>
 									<!--suppress UnresolvedMavenProperty -->
 									<replacefilter token="#build#" value="${label}"/>
 									<replacefilter token="#version#" value="${project.version}"/>
@@ -2923,7 +2923,7 @@
 								</replace>
 								<echo>Adding Google analytics in target/site for &lt;BODY&gt;</echo>
 								<replace dir="target/site" summary="true">
-									<include name="**/*.html"></include>
+									<include name="**/*.html"/>
 									<replacetoken><![CDATA[</BODY>]]></replacetoken>
 									<replacevalue><![CDATA[
 <script>
